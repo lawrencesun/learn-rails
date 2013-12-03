@@ -44,7 +44,14 @@ group :development do
  gem 'better_errors'
  gem 'quiet_assets'
  gem 'rails_layout'
+ gem 'sqlite3'
 end
+group :production do
+ gem 'pg'
+ gem 'rails_12factor'
+ gem 'thin'
+end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
